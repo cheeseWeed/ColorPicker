@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Color Wheel</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src="scriptWheel.js" type="text/javascript"></script>	
+	<script src="jquery.js" type="text/javascript"></script>			
+	</head>
+	<body >
+	<div class="square sQinline orange"></div>
+	<div class="square sQinline blue"></div>
+	<div class="square sQinline green"></div>
+	<div class="square sQinline yellow"></div>
+	<div class="square sQinline red"></div>
+	<div ></div>
+	<div id="main"></div>
+	<button id="colorWheel">Color Picker</button>
+	<!-- colorWheel popout div -->
+	<div id= 'popout' >
+		<div >
+			<a href=sip:devan.glazier@ldschurch.org>Im Devan</a>
+		</div>
+		<div class="inline">
+			<div  id="row1" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#003366"><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#336699" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#3366CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#003399" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#000099" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#0000CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#000066" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row2" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#006666" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#006699" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#0099CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#0066CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#0033CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#0000FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#3333FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#333399" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div  id="row3" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#669999" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#009999" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#33CCCC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00CCFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#0099FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#0066FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#3366FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#3333CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#666699" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div  id="row4" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#339966" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00CC99" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00FFCC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00FFFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#33CCFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#3399FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#6699FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#6666FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#6600FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#6600CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row5" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#339933" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00CC66" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00FF99" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#66FFCC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#66FFFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#66CCFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#99CCFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#9999FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#9966FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#9933FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#9900FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row6" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#006600" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00CC00" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#00FF00" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#66FF99" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#99FFCC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CCFFFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CCCCFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC99FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC66FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC33FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC00FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#9900CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row7" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#003300" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#009933" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#33CC33" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#66FF66" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#99FF99" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CCFFCC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFFFFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFCCFF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF99FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF66FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF00FF" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC00CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#660066" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row8" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#336600" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#009900" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#66FF33" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#99FF66" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CCFF99" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFFFCC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFCCCC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF99CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF66CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF33CC" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC0099" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#993399" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row9" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#333300" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#669900" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#99FF33" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CCFF66" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFFF99" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFCC99" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF9999" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF6699" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF3399" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC3399" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#990099" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row10" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#666633" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#99CC00" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CCFF33" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFFF66" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFCC66" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF9966" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF6666" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF0066" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC6699" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#993366" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row11" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#999966" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CCCC00" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFFF00" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FFCC00" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF9933" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF6600" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF5050" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC0066" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#660033" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row12" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#996633" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC9900" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF9900" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC6600" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF3300" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#FF0000" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC0000" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#990033" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+			<div id="row13" class="colorPickerDiv">
+				<div class = "hexagon"data-hcolor="#663300" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#996600" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#CC3300" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#993300" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#990000" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#800000" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+				<div class = "hexagon"data-hcolor="#993333" ><div class="top"></div><div class="hex"></div><div class="bottom"></div></div>
+			</div>
+		</div>
+		<!-- box and text with color -->
+		<input id="divpreview" class="inline up50"/>
+		<div id ="divpreviewtxt" class="inline up50">pick a color</div>
+		<!--hidden field stores clicked color -->
+		<div id= 'myColor' style='display:none;'>#FFF</div>
+		<button id='close'>Close</button>
+		<!--end colorWheel popout div -->
+	</div>
+	</body>
+</html>
